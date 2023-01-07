@@ -9,20 +9,18 @@ import bassem.udacity.session_1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    //    private lateinit var binding: ActivityMainLtrBinding
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//        bindViewsUsingFindViewById()
 
-//        binding = ActivityMainLtrBinding.inflate(layoutInflater)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_main)
+        bindViewsUsingFindViewById()
 
-        setContentView(binding.root)
+//        binding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
 
-        bindViewsUsingViewBinding()
+//        bindViewsUsingViewBinding()
 
     }
 

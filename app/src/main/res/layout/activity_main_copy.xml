@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
@@ -10,10 +9,10 @@
         android:id="@+id/sessions_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/session_1"
+        android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -22,8 +21,8 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintLeft_toLeftOf="@id/sessions_tv"
-        app:layout_constraintRight_toRightOf="@id/sessions_tv"
+        app:layout_constraintEnd_toEndOf="@id/sessions_tv"
+        app:layout_constraintStart_toStartOf="@id/sessions_tv"
         app:layout_constraintTop_toBottomOf="@id/sessions_tv" />
 
     <TextView
@@ -35,7 +34,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.8" />
 
@@ -45,10 +44,19 @@
         android:layout_height="wrap_content"
         android:text="@string/start_learning"
         app:layout_constraintBottom_toBottomOf="@id/ready_tv"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintLeft_toRightOf="@id/ready_tv"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ready_tv"
         app:layout_constraintTop_toTopOf="@id/ready_tv"
         app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_btn" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
