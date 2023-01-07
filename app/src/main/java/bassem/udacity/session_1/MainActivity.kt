@@ -8,7 +8,7 @@ import bassem.udacity.session_1.databinding.ActivityMainLtrBinding
 
 class MainActivity : AppCompatActivity() {
 
-            private lateinit var binding: ActivityMainLtrBinding
+    private lateinit var binding: ActivityMainLtrBinding
 //    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
